@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Miguel Souza da Rocha Moura · Perfil</title>
+<meta name="description" content="Perfil de Miguel Souza da Rocha Moura: stack, projetos e contato, organizados como um esquema de banco de dados.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#f2f5f8; --grid:#dbe3ec; --ink:#10243a; --muted:#52667b;
+  --card:#ffffff; --line:#10243a; --key:#f2c230; --link:#0b57d0;
+}
+@media (prefers-color-scheme:dark){
+  :root{--paper:#0d1b2a; --grid:#17293c; --ink:#e7eef6; --muted:#9fb1c4;
+        --card:#12263a; --line:#5d7a98; --key:#f2c230; --link:#8ab4f8;}
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0; color:var(--ink); background-color:var(--paper);
+  background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+  background-size:32px 32px;
+  font:400 1rem/1.6 "IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+a{color:var(--link)}
+a:focus-visible{outline:3px solid var(--key); outline-offset:2px}
+.wrap{max-width:1040px; margin:0 auto; padding:0 20px}
+header{padding:72px 0 40px}
+h1{font-size:clamp(2.4rem,7vw,4.6rem); line-height:1.02; letter-spacing:-.03em; margin:0 0 16px; font-weight:700}
+.lead{font-size:1.2rem; max-width:34em; margin:0 0 6px}
+.meta{color:var(--muted); margin:0 0 28px}
+.links{display:flex; flex-wrap:wrap; gap:10px}
+.links a{
+  font:500 .9rem "IBM Plex Mono",ui-monospace,monospace; text-decoration:none; color:var(--ink);
+  background:var(--card); border:1.5px solid var(--line); padding:8px 14px;
+}
+.links a:hover{background:var(--key); color:#10243a; border-color:#10243a}
+section{padding:36px 0}
+h2{font-size:1.6rem; margin:0 0 6px; letter-spacing:-.01em}
+.sub{color:var(--muted); margin:0 0 22px; max-width:40em}
+.now{display:grid; gap:14px; grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.now div{background:var(--card); border-left:6px solid var(--key); border-top:1.5px solid var(--line); border-right:1.5px solid var(--line); border-bottom:1.5px solid var(--line); padding:16px 18px}
+.now h3{margin:0 0 4px; font-size:1.05rem}
+.now p{margin:0; color:var(--muted)}
+.tables{display:grid; gap:20px; grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.tbl{background:var(--card); border:1.5px solid var(--line)}
+.tbl h3{
+  margin:0; padding:9px 14px; font:500 .95rem "IBM Plex Mono",ui-monospace,monospace;
+  background:var(--ink); color:var(--paper); display:flex; justify-content:space-between; gap:10px;
+}
+.tbl h3 span{color:var(--key)}
+.tbl ul{list-style:none; margin:0; padding:0}
+.tbl li{padding:8px 14px; border-top:1px solid var(--grid); font-family:"IBM Plex Mono",ui-monospace,monospace; font-size:.9rem}
+.tbl li:first-child{border-top:0}
+.pk{display:inline-block; font-size:.7rem; background:var(--key); color:#10243a; padding:0 5px; margin-right:8px; font-weight:500}
+.proj{display:grid; gap:20px}
+.proj article{background:var(--card); border:1.5px solid var(--line); display:grid; grid-template-columns:200px 1fr}
+.proj .id{overflow-wrap:anywhere;background:var(--ink); color:var(--paper); padding:16px; font:500 .95rem "IBM Plex Mono",ui-monospace,monospace}
+.proj .id small{display:block; color:var(--key); margin-top:6px; font-weight:400}
+.proj .body{padding:16px 18px}
+.proj .body p{margin:0 0 10px}
+.proj .stack{font:.85rem "IBM Plex Mono",ui-monospace,monospace; color:var(--muted)}
+.proj .body a{margin-right:14px; font-weight:500}
+@media (max-width:640px){.proj article{grid-template-columns:1fr}}
+dl{display:grid; grid-template-columns:max-content 1fr; gap:0; margin:0; background:var(--card); border:1.5px solid var(--line)}
+dt,dd{margin:0; padding:10px 16px; border-top:1px solid var(--grid)}
+dt:first-of-type,dt:first-of-type+dd{border-top:0}
+dt{font:500 .9rem "IBM Plex Mono",ui-monospace,monospace; background:var(--grid); color:var(--ink)}
+@media (max-width:560px){dl{grid-template-columns:1fr} dt{border-top:1px solid var(--line)}}
+footer{padding:36px 0 56px; color:var(--muted)}
+footer p{margin:0 0 8px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>Miguel Souza<br>da Rocha Moura</h1>
+  <p class="lead">Desenvolvo sistemas, trabalho com banco de dados e estudo operações em nuvem.</p>
+  <p class="meta">Estudante na PUC-Campinas. Em busca de estágio.</p>
+  <nav class="links" aria-label="Links principais">
+    <a href="https://github.com/miguelsrmoura12">GitHub</a>
+    <a href="https://www.linkedin.com/in/miguel-souza-da-rocha-moura-7b7599381/">LinkedIn</a>
+    <a href="curriculo-miguel-moura.pdf">Currículo (PDF)</a>
+  </nav>
+</header>
+
+<section aria-labelledby="agora">
+  <h2 id="agora">O que estou fazendo agora</h2>
+  <p class="sub">Trabalho, projeto próprio e estudo, ao mesmo tempo.</p>
+  <div class="now">
+    <div>
+      <h3>Estudando na PUC-Campinas</h3>
+      <p>Cursando a graduação e desenvolvendo os projetos integradores.</p>
+    </div>
+    <div>
+      <h3>Procurando estágio</h3>
+      <p>Buscando vagas para aplicar o que aprendi em programação e banco de dados.</p>
+    </div>
+    <div>
+      <h3>Logística na AutoZone</h3>
+      <p>Trabalho na parte de logística da empresa.</p>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="stack">
+  <h2 id="stack">Stack</h2>
+  <p class="sub">As ferramentas que uso, agrupadas como tabelas de um esquema.</p>
+  <div class="tables">
+    <div class="tbl">
+      <h3>linguagens <span>5 linhas</span></h3>
+      <ul><li><span class="pk">PK</span>PL/SQL</li><li>JavaScript</li><li>Java</li><li>C</li><li>Python</li></ul>
+    </div>
+    <div class="tbl">
+      <h3>banco_de_dados <span>6 linhas</span></h3>
+      <ul><li><span class="pk">PK</span>Oracle</li><li>SQL</li><li>MySQL</li><li>Modelagem de dados</li><li>Operações em nuvem</li><li>Azure</li></ul>
+    </div>
+    <div class="tbl">
+      <h3>web <span>5 linhas</span></h3>
+      <ul><li><span class="pk">PK</span>Node.js</li><li>Express</li><li>HTML e CSS</li><li>React</li><li>APIs REST</li></ul>
+    </div>
+    <div class="tbl">
+      <h3>ferramentas <span>4 linhas</span></h3>
+      <ul><li><span class="pk">PK</span>Git e GitHub</li><li>Claude Code</li><li>Power BI</li><li>Azure</li></ul>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="projetos">
+  <h2 id="projetos">Projetos</h2>
+  <p class="sub">Cada projeto aponta para o que foi usado nele.</p>
+  <div class="proj">
+    <article>
+      <div class="id">scsc<small>CLI em Python</small></div>
+      <div class="body">
+        <p><strong>Sistema de Controle de Solicitações Corporativas.</strong> Gerencia demandas internas em um só lugar: cadastro de solicitantes, abertura de chamados com classificação automática de prioridade, atualização de status e estatísticas operacionais.</p>
+        <p class="stack">Python · MySQL</p>
+        <a href="https://github.com/miguelsrmoura12">Código</a>
+      </div>
+    </article>
+    <article>
+      <div class="id">saps<small>Projeto Integrador II</small></div>
+      <div class="body">
+        <p><strong>Sistema de Atendimento de Pronto-Socorro.</strong> Sistema web que organiza o fluxo de atendimento, da chegada do paciente à recepção até a finalização do atendimento médico. PUC-Campinas, 2º semestre de 2026.</p>
+        <p class="stack">Programação para Web · Banco de Dados · Engenharia de Software · Estrutura de Dados e Algoritmos</p>
+        <a href="https://github.com/miguelsrmoura12">Código</a>
+      </div>
+    </article>
+    <article>
+      <div class="id">playlist_do_momento<small>projeto</small></div>
+      <div class="body">
+        <p><strong>Playlist do Momento.</strong> Resolve a dificuldade de escolher rapidamente uma playlist que combine com o humor e o momento atual.</p>
+        <a href="https://github.com/miguelsrmoura12">Código</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section aria-labelledby="formacao">
+  <h2 id="formacao">Formação e idiomas</h2>
+  <p class="sub">&nbsp;</p>
+  <dl>
+    <dt>graduação</dt><dd>PUC-Campinas</dd>
+    <dt>idiomas</dt><dd>Português (nativo) · Inglês A2 · Espanhol (básico)</dd>
+  </dl>
+</section>
+
+<footer>
+  <p>Quer conversar sobre estágio? Me chame no <a href="https://www.linkedin.com/in/miguel-souza-da-rocha-moura-7b7599381/">LinkedIn</a> ou veja meu <a href="curriculo-miguel-moura.pdf">currículo em PDF</a>.</p>
+  <p><a href="https://github.com/miguelsrmoura12">Voltar ao perfil no GitHub</a></p>
+</footer>
+
+</div>
+</body>
+</html>
