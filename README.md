@@ -15,7 +15,7 @@
 
 ## Sobre mim
 
-Estudo na **PUC-Campinas**, trabalho na parte de logística da **AutoZone** e estou procurando vagas de estágio na área de tecnologia. Meus projetos acadêmicos passam por Python, MySQL e desenvolvimento web.
+Estudo na **PUC-Campinas**, trabalho na parte de logística da **AutoZone** e estou procurando vagas de estágio na área de tecnologia. Meus projetos acadêmicos passam por Python, C, JavaScript, MySQL, Oracle e desenvolvimentos web.
 
 ## Stack
 
